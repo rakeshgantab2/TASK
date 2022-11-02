@@ -3,7 +3,7 @@ const app = express();
 
 // adding environment variables configuration file
 require('dotenv').config();
-const port = process.env.APP_PORT;
+const port = process.env.PORT || 4000;
 
 // adding the start up routes
 require('./startup/routes')(app);
